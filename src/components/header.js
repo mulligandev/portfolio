@@ -1,32 +1,42 @@
+import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+
+// CSS Imports
+import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#4EA3CC`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `1rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ /* margin: 0 */ display: "inline" }}>
         <Link
           to="/"
           style={{
             color: `white`,
             textDecoration: `none`,
+            "background-image": "linear-gradient(to right, #727273, #262626)",
+            "-webkit-background-clip": "text",
+            "-webkit-text-fill-color": "transparent",
           }}
         >
           {siteTitle}
         </Link>
       </h1>
+      <nav className="navigation">
+        <a href="#">about</a>
+        <a href="#">work</a>
+        <a href="#">blog</a>
+        <a href="#">contact</a>
+      </nav>
     </div>
   </header>
 )

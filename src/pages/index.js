@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -20,7 +19,7 @@ const IndexPage = () => (
       <li>
         Linkedin:{" "}
         <a href="https://www.linkedin.com/in/michaelmulligan94/">
-          Mike Mulligan
+          @michaelmulligan94
         </a>
       </li>
       <li>

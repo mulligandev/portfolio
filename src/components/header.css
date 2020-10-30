@@ -1,0 +1,17 @@
+.navigation {
+  float: right;
+  padding-top: 0.5rem;
+}
+
+.navigation a {
+  text-decoration:none;
+  color: #727273;
+  margin-right: 0.5rem;
+}
+
+.navigation a:hover {
+  border-width: 0;
+  border-color: #262626;
+  border-style: solid;
+  border-bottom-width: 2px;
+}

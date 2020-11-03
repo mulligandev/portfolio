@@ -7,7 +7,7 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="SOS" />
     <h1>404: You are lost...</h1>
-    <p>You have wander off the beaten path. Please go back!</p>
+    <p>You have wandered off the beaten path. Please go back!</p>
   </Layout>
 )
 

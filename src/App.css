@@ -1,0 +1,72 @@
+#root {
+  min-height: calc(100% - 20px);
+  border: solid #000 10px;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+#site-logo {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #292d34;
+  display: block;
+  position: relative;
+  transform: rotate(0deg);
+  transition: transform 0.4s ease-in-out;
+  flex-shrink: 0;
+}
+#site-logo:hover {
+  opacity: 1;
+  transform: rotate(-90deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+#site-logo > #logo-text {
+  color: #fff;
+  text-decoration: none;
+  color: #292d34;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: transform 0.4s ease-in-out;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+#site-logo:hover > #logo-text {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center;
+}
+nav {
+  margin: auto 0;
+}
+
+nav div {
+  float: right;
+}
+
+nav a {
+  font: 112.5%/1.45em georgia, serif;
+  text-decoration: none;
+  color: #292d34;
+  margin-left: 0.5rem;
+}
+
+nav a:hover {
+  border: solid #ffdc00;
+  border-width: 0 0 2px;
+}

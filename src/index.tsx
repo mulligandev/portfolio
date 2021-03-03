@@ -4,8 +4,9 @@ import ReactDOM from "react-dom";
 // Components
 import App from "./App";
 
-// CSS
-import "./index.css";
+// Global CSS
+import './global.css';
+import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>

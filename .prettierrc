@@ -1,8 +1,6 @@
-
 {
   "tabWidth": 2,
   "arrowParens": "always",
-  "endOfLine": "lf",
   "jsxSingleQuote": true,
   "singleQuote": true,
   "useTabs": false

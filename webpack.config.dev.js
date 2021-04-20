@@ -1,24 +1,19 @@
-import webpack from 'webpack';
-import path from 'path';
-import HtmlWebPackPlugin from 'html-webpack-plugin';
+const webpack = require('webpack');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-const config: webpack.Configuration = {
-  entry: './src/index.tsx',
+const config = {
+  entry: './src/index.jsx',
   mode: 'development',
   target: 'web',
   module: {
     rules: [
       {
-        test: /\.(ts|js)x?$/i,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [
-              '@babel/preset-env',
-              '@babel/preset-react',
-              '@babel/preset-typescript',
-            ],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
           },
         },
       },
@@ -44,7 +39,7 @@ const config: webpack.Configuration = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.jsx', '.js'],
   },
   plugins: [
     new HtmlWebPackPlugin({
@@ -65,4 +60,4 @@ const config: webpack.Configuration = {
   },
 };
 
-export default config;
+module.exports = config;

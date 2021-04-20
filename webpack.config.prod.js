@@ -1,25 +1,20 @@
-import webpack from 'webpack';
-import path from 'path';
-import HtmlWebPackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-const config: webpack.Configuration = {
-  entry: './src/index.tsx',
+const config = {
+  entry: './src/index.jsx',
   mode: 'production',
   module: {
     rules: [
       {
-        test: /\.(t|j)sx?$/i,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [
-              '@babel/preset-env',
-              '@babel/preset-react',
-              '@babel/preset-typescript',
-            ],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
           },
         },
       },
@@ -47,7 +42,7 @@ const config: webpack.Configuration = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.jsx', '.js'],
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -91,4 +86,4 @@ const config: webpack.Configuration = {
   },
 };
 
-export default config;
+module.exports = config;

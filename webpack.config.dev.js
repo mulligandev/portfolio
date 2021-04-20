@@ -43,7 +43,7 @@ const config = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/public/index.html',
+      template: './src/index.html',
       hash: true,
       filename: 'index.html',
     }),

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -47,8 +48,12 @@ const config = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
-      template: './src/public/index.html',
+      template: './src/index.html',
+      hash: true,
       filename: 'index.html',
+    }),
+    new CopyPlugin({
+      patterns: [{ from: './public' }],
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[chunkhash].css',

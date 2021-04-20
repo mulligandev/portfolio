@@ -4,7 +4,7 @@ import React from 'react';
 import CodeSVG from './code.svg';
 
 const Home = () => (
-  <div className='flex flex-col'>
+  <div className='flex flex-col p-2'>
     <h1 className='text-center py-2'>
       Hi, I&apos;m Mike. I&apos;m a Full Stack Developer based out of Upstate
       New York.

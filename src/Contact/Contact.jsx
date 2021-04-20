@@ -5,7 +5,7 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="p-2">
       <h3>Contact coming soon...</h3>
     </div>
   );

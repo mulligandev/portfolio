@@ -15,7 +15,7 @@ const App = () => (
   <Router>
     <div className='container mx-auto'>
       <div className='flex flex-col'>
-        <header className='flex flex-row py-2'>
+        <header className='flex flex-row p-2'>
           <Link id='site-logo' to='/'>
             <span id='logo-text'>MM</span>
           </Link>

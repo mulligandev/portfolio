@@ -1,3 +1,14 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* Highlighting on selection */
+::selection {
+  color: #292d34;
+  background: #ffdc00;
+}
+
+::-moz-selection {
+  color: #292d34;
+  background: #ffdc00;
+}

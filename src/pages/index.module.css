@@ -1,0 +1,65 @@
+.about-page {
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-info {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.main-info > section {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.main-info > section > span {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.portrait {
+  border-radius: 9999px;
+}
+
+.portrait img {
+  border-radius: 9999px;
+}
+
+.skills {
+  list-style: none;
+  margin: 0;
+}
+
+.skills > li {
+  display: inline-block;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0.125rem 0.5rem;
+  margin: 0 0.25rem;
+  border-radius: 0.375rem;
+}
+
+.skills > li > span {
+  font-size: 0.75rem;
+}
+
+.about > em {
+  font-weight: 700;
+}
+
+.about > span {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 760px) {
+  .main-info {
+    flex-direction: column;
+  }
+
+  .portrait {
+    margin: 0 auto;
+  }
+}

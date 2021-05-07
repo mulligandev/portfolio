@@ -1,0 +1,8 @@
+.contact a {
+  background-image: none;
+}
+
+.contact a:hover {
+  background-image: none;
+  border-bottom: solid #dbb68b;
+}

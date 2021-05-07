@@ -1,0 +1,124 @@
+.app-container {
+  margin: 3rem auto;
+  max-width: 760px;
+  padding: 0 1rem;
+}
+
+.header-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.logo-container {
+  flex-grow: 1;
+}
+
+.logo {
+  background-image: none;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #292d34;
+  display: block;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  border: 5px solid #292d34;
+  opacity: 1;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.logo:hover > .logo-text {
+  color: #dbb68b;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.logo-text {
+  text-decoration: none;
+  color: #292d34;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.logo > h3:hover {
+  color: #dbb68b;
+}
+
+.nav-links {
+  list-style: none;
+  margin: auto 0;
+}
+
+.nav-links > li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.nav-links > li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  border: none;
+  background-image: none;
+}
+
+.nav-links a:hover {
+  background-image: none;
+  border-bottom: solid #dbb68b;
+}
+
+.active {
+  border-bottom: solid #dbb68b !important;
+}
+
+footer {
+  display: flex;
+}
+
+.social {
+  align-items: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.social li {
+  display: inline;
+  padding: 0 0.5rem;
+}
+
+.social a {
+  background-image: none;
+}
+
+.social a:hover {
+  color: #dbb68b;
+}
+
+.social svg {
+  display: inline-block;
+  vertical-align: middle;
+}

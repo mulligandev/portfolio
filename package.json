@@ -1,63 +1,38 @@
 {
   "name": "mulligan.tech",
-  "version": "0.0.2",
-  "description": "",
+  "version": "1.0.0",
   "private": true,
+  "description": "mulligan.tech",
+  "author": "Mike Mulligan",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "dev": "webpack serve --config webpack.config.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
-    "lint": "eslint --fix"
-  },
-  "keywords": [],
-  "author": "Michael Mulligan",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "7.13.16",
-    "@babel/plugin-transform-runtime": "7.13.15",
-    "@babel/preset-env": "7.13.15",
-    "@babel/preset-react": "7.13.13",
-    "@babel/runtime": "7.13.16",
-    "autoprefixer": "10.2.5",
-    "babel-loader": "8.2.2",
-    "clean-webpack-plugin": "3.0.0",
-    "copy-webpack-plugin": "^8.1.1",
-    "cross-env": "7.0.3",
-    "css-loader": "5.2.4",
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^8.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "file-loader": "6.2.0",
-    "html-webpack-plugin": "5.3.1",
-    "mini-css-extract-plugin": "1.5.0",
-    "postcss": "8.2.10",
-    "postcss-loader": "5.2.0",
-    "prettier": "2.2.1",
-    "style-loader": "2.0.0",
-    "tailwindcss": "2.1.1",
-    "webpack": "5.34.0",
-    "webpack-cli": "4.6.0",
-    "webpack-dev-server": "3.11.2"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-router-dom": "5.2.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version",
-      "last 1 ie version"
-    ]
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "gatsby": "^3.4.1",
+    "gatsby-plugin-image": "^1.4.0",
+    "gatsby-plugin-postcss": "^4.4.0",
+    "gatsby-plugin-react-helmet": "^4.4.0",
+    "gatsby-plugin-sharp": "^3.4.1",
+    "gatsby-plugin-typography": "^3.4.0",
+    "gatsby-source-filesystem": "^3.4.0",
+    "gatsby-transformer-sharp": "^3.4.0",
+    "postcss": "^8.2.14",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-fairy-gates": "^0.16.19"
   }
 }

@@ -30,6 +30,7 @@ export default function Layout({ children }) {
         {/* Nav Links */}
         <ul className={`${styles.navLinks}`}>
           <ListLink to="/">About</ListLink>
+          <ListLink to="/resume">Resume</ListLink>
           <ListLink to="/contact/">Contact</ListLink>
         </ul>
       </header>

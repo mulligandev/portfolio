@@ -16,7 +16,7 @@ const About = () => {
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Mulligan | Lead Engineer @ Booz Allen Hamilton</title>
+        <title>Mike Mulligan | Lead Engineer @ Booz Allen Hamilton</title>
       </Helmet>
       <div className={styles.aboutPage}>
         <div className={styles.mainInfo}>

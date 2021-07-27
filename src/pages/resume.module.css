@@ -1,0 +1,17 @@
+.resume li {
+  font-size: 0.75rem;
+}
+
+.work span {
+  font-weight: bold;
+  border-bottom: 1.5px solid #dbb68b;
+}
+
+.more {
+  font-style: italic;
+}
+
+.more > a {
+  background-image: none;
+  border-bottom: solid #dbb68b;
+}
